@@ -1,0 +1,144 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    --Blue: hsl(219, 85%, 26%);
+    --Red: hsl(1, 90%, 64%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-light-grayish-blue);
+    line-height: 1.5;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 16px 0;
+    
+}
+.card{
+    max-width: 730px;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 10px 22px 16px 36px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+header h1 {
+    font-size:25px;
+    font-weight: 800;
+}
+header h1 span {
+    padding: 7px;
+    border-radius: 3px;
+    background-color: var(--Blue);
+    color: #FFF;
+    margin-left: 10px;
+}
+.Mark-all  {
+color: var(--Dark-grayish-blue);
+cursor: pointer;
+transition: 0.3s;
+}
+.Mark-all:hover{
+    color:var(--Blue)
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 8px;
+    
+}
+.Not-readable{
+    background-color: var(--Very-light-grayish-blue);
+}
+strong{
+    color: black;
+}
+.content{
+    color: var(--Dark-grayish-blue);
+}
+img{
+    width: 50px;
+    margin: 20px;
+}
+.mark-read{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.to{
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.to:hover{
+    color: var(--Blue);
+}
+.chess{
+    color: var(--Blue);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.chess:hover{
+    color: var(--Dark-grayish-blue);
+}
+.date{
+    color:var(--Grayish-blue);
+}
+.massige{
+    margin: 20px;
+    border: 0.5px solid var(--Light-grayish-blue-1);
+    padding: 10px;
+    cursor: pointer;
+    margin: -18px 50px 10px 100px;
+    color: var(--Dark-grayish-blue);
+    width: 500px;
+}
+.massige:hover {
+    background-color: var(--Light-grayish-blue-1);
+}
+.image-chess{
+    margin-left: 120px;
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+    transition-property: scale;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.image-chess:hover{
+    cursor: pointer;
+    border: 2px solid var(--Light-grayish-blue-2);
+    border-radius: 8px;
+    scale: 1.2;
+}
+
